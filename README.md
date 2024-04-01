@@ -16,14 +16,12 @@
 - Deverá ser utilizada a linguagem Python e o framework Django para desenvolver as soluções;
 - O candidato terá que criar uma branch nomeada com o seu nome e abrir um pull request para concluir a entrega do teste;
 - <strong>Atenção</strong>: O candidato precisa fazer o fork do repositório para conseguir abrir o pull request;
-- Fazer um vídeo de até 5 minutos explicando brevemente o código e a aplicação desenvolvida.
 
 <hr>
 <h2 id="observacoes" style="text-align:center;border-bottom:none">Observações</h2>
 
 - O banco de dados utilizado fica a sua escolha;
 - Podem ser feitas alterações nas configurações do projeto Django;
-- Seguir um padrão de nomeação em inglês no projeto.
 
 <hr>
 <h2 id="etapa-1" style="text-align:center;border-bottom:none">Etapa 1</h2>
@@ -90,4 +88,3 @@ A empresa de energia gostou da sua aplicação web, mas necessita de algumas alt
 2. Permitir inclusão de consumidores por meio de formulário
 3. O formulário de cadastro deve preencher os campos de estado e cidade baseado no CEP. Para isso, você deverá usar a API gratuita https://viacep.com.br/
 4. O documento do consumidor deve ser validado de acordo com o tipo. A validação pode ser no back ou no front-end.
-5. Disponibilizar a aplicação em Nuvem com um servidor de sua escolha. O candidato deve disponibilizar o link da aplicação no final desta documentação.
