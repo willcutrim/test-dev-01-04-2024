@@ -61,7 +61,7 @@ Uma empresa de assinatura de energia está interessada em criar uma calculadora 
 
 1. A calculadora terá que ser desenvolvida no arquivo calculator_python.py dentro da função calculator();
 2. Todos os testes presentes no arquivo calculator_python.py precisam ser executados sem erros;
-3. Deverá ser utilizado o framework Django para fazer a integração entre a calculadora e a interface.
+3. Deverá ser utilizado o framework Django para fazer a integração entre a calculadora e a interface que você deve desenvolver.
 
 
 <hr>
@@ -71,11 +71,11 @@ A empresa de energia gostou da sua solução para o cálculo de economia, mas ne
 
 ### Requisitos Etapa 2:
 
-1. Armazenar consumidores, seus dados pessoais e de consumo no banco de dados.(dados para cadastro na planilha consumers.xlsx)
-2. Armazenar as regras de desconto seguindo a tabela dada no banco de dados.
-3. Associar cada consumidor cadastrado a uma regra de desconto
-4. Calcular a economia baseada nos atributos do consumidor
-5. Listar os consumidores e a economia em uma tabela para uso dos clientes
+1. Armazenar consumidores, seus dados pessoais e de consumo no banco de dados.(dados para cadastro na planilha consumers.xlsx);
+2. Armazenar as regras de desconto seguindo a tabela dada no banco de dados;
+3. Associar cada consumidor cadastrado a uma regra de desconto;
+4. Calcular a economia baseada nos atributos do consumidor;
+5. Listar os consumidores e a economia em uma tabela para uso dos clientes.
 
 <hr>
 <h2 id="etapa-3" style="text-align:center;border-bottom:none">Etapa 3</h2>
@@ -84,7 +84,7 @@ A empresa de energia gostou da sua aplicação web, mas necessita de algumas alt
 
 ### Requisitos Etapa 3:
 
-1. Permitir filtragem na tabela por tipo de consumidor e intervalo de consumo
-2. Permitir inclusão de consumidores por meio de formulário
+1. Permitir filtragem na tabela por tipo de consumidor e intervalo de consumo;
+2. Permitir inclusão de consumidores por meio de formulário;
 3. O formulário de cadastro deve preencher os campos de estado e cidade baseado no CEP. Para isso, você deverá usar a API gratuita https://viacep.com.br/
 4. O documento do consumidor deve ser validado de acordo com o tipo. A validação pode ser no back ou no front-end.
