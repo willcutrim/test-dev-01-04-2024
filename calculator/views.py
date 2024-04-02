@@ -1,30 +1,38 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from calculator_python import calculator
+from calculator.models import RegrasDeDesconto, Consumer
 
-# TODO: Your list view should do the following tasks
-"""
--> Recover all consumers from the database
--> Get the discount value for each consumer
--> Calculate the economy
--> Send the data to the template that will be rendered
-"""
+from .forms import ConsumerForm, RegrasDeDescontoForm
+def listar_users(request):
 
-
-def view1(request):
-    # Create the first view here.
-    pass
+    return render(request, 'calculator/list.html', {'regras': Consumer.objects.all()})
+    
 
 
-# TODO: Your create view should do the following tasks
-"""Create a view to perform inclusion of consumers. The view should do:
--> Receive a POST request with the data to register
--> If the data is valid (validate document), create and save a new Consumer object associated with the right discount rule object
--> Redirect to the template that list all consumers
+def cadastrar_consumidores(request):
+    if request.method == 'POST':
+        form = ConsumerForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+    else:
+        form = ConsumerForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'calculator/create_consumer.html', context)
 
-Your view must be associated with an url and a template different from the first one. A link to
-this page must be provided in the main page.
-"""
 
 
-def view2():
-    # Create the second view here.
-    pass
+def create_regras(request):
+    if request.method == 'POST':
+        form = RegrasDeDescontoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('create_regras')
+    else:
+        form = RegrasDeDescontoForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'calculator/create_regras.html', context)
